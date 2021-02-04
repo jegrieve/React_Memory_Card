@@ -40,13 +40,19 @@ const Card = (props) => {
     }
   })();
 
+  const returnId = () => {
+    props.getCardId(props.id);
+  };
+
   return (
-    <div className="game-card">
+    <div className="game-card" onClick={returnId}>
       <div className="id">{data.id}</div>
       <img
         src={data.img}
         className="img"
         alt={'Picture of breed: ' + data.breed}
+        width="100" /*make this 250 afterwards*/
+        height="100" /*make this 250 afterwards*/
       />
       <div className="breed">{data.breed}</div>
     </div>
