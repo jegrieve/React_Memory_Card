@@ -13,7 +13,7 @@ const Navbar = (props) => {
   });
 
   return (
-    <div>
+    <div className="navbar">
       <div>
         <span>Score: {props.newScore} </span>
         <span>High Score: {highScore}</span>

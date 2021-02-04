@@ -51,8 +51,8 @@ const Card = (props) => {
         src={data.img}
         className="img"
         alt={'Picture of breed: ' + data.breed}
-        width="100" /*make this 250 afterwards*/
-        height="100" /*make this 250 afterwards*/
+        width="250" /*make this 250 afterwards*/
+        height="250" /*make this 250 afterwards*/
       />
       <div className="breed">{data.breed}</div>
     </div>

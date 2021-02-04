@@ -21,14 +21,17 @@ const CardContainer = (props) => {
     }
   }, [currentPicks]);
 
+  useEffect(() => {
+    if (currentPicks.length > 0 && newScore === 0) setCurrentPicks([]);
+  }, [newScore]);
+
   return (
     <div>
       <Navbar newScore={newScore} />
       {shuffledCards.map((id, i) => {
         return (
-          <div key={i}>
+          <div className="card" key={i}>
             {' '}
-            {/* change i to uniqID*/}
             <Card id={id} getCardId={getCardId} />
           </div>
         );
