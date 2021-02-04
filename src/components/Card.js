@@ -46,13 +46,12 @@ const Card = (props) => {
 
   return (
     <div className="game-card" onClick={returnId}>
-      <div className="id">{data.id}</div>
       <img
         src={data.img}
         className="img"
         alt={'Picture of breed: ' + data.breed}
-        width="250" /*make this 250 afterwards*/
-        height="250" /*make this 250 afterwards*/
+        width="250"
+        height="250"
       />
       <div className="breed">{data.breed}</div>
     </div>
